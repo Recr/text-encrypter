@@ -1,5 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --firstColor: #D8DFE8;
+    --secondColor: #0A3871;
+    --thirdColor: #ffffff;
+    --fourthColor: #495057;
+    --fifthColor: #343A40;
+}
+
+body {
+    background-color: var(--firstColor);
+    font-family: "Inter", sans-serif;
+}
+
+.container__inputArea__input {
+    border: none;
+    background-color: var(--firstColor);
+}
+
+.container__inputArea__input::placeholder {
+    color: var(--secondColor);
+}
+
+.container__requirements {
+    display: flex;
+}
+
+.container__requirements__text {
+    font-size: 0.75rem;
+    color: var(--fourthColor);
+}
+
+.container__outputArea__noMessage {
+    color: var(--fifthColor);
+}
+
+.container__outputArea__typeMessage {
+    color: var(--fourthColor);
 }
