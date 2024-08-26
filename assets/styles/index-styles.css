@@ -22,6 +22,7 @@ body {
 .container__inputArea__input {
     border: none;
     background-color: var(--firstColor);
+    font-size: 2rem;
 }
 
 .container__inputArea__input::placeholder {
@@ -30,6 +31,10 @@ body {
 
 .container__requirements {
     display: flex;
+}
+
+.container__requirements__icon {
+    width: 1rem;
 }
 
 .container__requirements__text {
