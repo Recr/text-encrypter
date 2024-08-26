@@ -4,39 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Encoder</title>
+    <script src="./assets/scripts/index-script.js"></script>
     <link rel="stylesheet" href="./assets/styles/index-styles.css">
 </head>
 <body>
     <header>
-        <img src="" alt="">
+        <img src="./assets/images/laptop-code.png" alt="laptop icon" id="header__icon">
     </header>
     <main>
         <div id="container">
-            <div id="container__inputArea">
-                <input type="input" class="container__inputArea__input" placeholder="Type your text here...">
-                <div class="container__requirements">
-                    <img src="./assets/images/info.png" alt="Info" class="container__requirements__icon">
-                    <p class="container__requirements__text">Only letters in lowercase and without diacritics</p>
+            <div>
+                <div id="container__inputArea">
+                    <textarea id="container__inputArea__input" placeholder="Type your text here..."></textarea>
+                    <div class="container__requirements">
+                        <img src="./assets/images/info.png" alt="Info" class="container__requirements__icon">
+                        <p class="container__requirements__text">Only letters in lowercase and without diacritics</p>
+                    </div>
+                </div>
+                <div id="container__buttons">
+                    <button class="container__buttons__encrypt" onclick="encrypt()">Encrypt</button>
+                    <button class="container__buttons__decrypt" onclick="decrypt()">Decrypt</button>
                 </div>
             </div>
-            <div id="container__buttons">
-                <button class="container__buttons__encrypt">Encrypt</button>
-                <button class="container__buttons__decrypt">Decrypt</button>
-            </div>
             <div id="container__outputArea">
-                <p class="container__outputArea__noMessage">No message was found</p>
-                <p class="container__outputArea__typeMessage">Type a message that you want to encrypt or decrypt.</p>
-                <p class="container__outputArea__text"></p>
-                <button class="container__output__button"></button>
+                <p class="container__outputArea__noMessage hide">No message was found</p>
+                <p id="container__outputArea__typeMessage">Type a message that you want to encrypt or decrypt.</p>
             </div>
         </div>
     </main>
     <footer>
         <p>Developed by Eliel Silva</p>
-        <div id="social">
-            <a href="https://www.linkedin.com/in/elielsilvas/"><img src="" alt="linkedIn"></a>
-            <a href="https://github.com/Recr"><img src="" alt="GitHub"></a>
+        <div id="footer__social">
+            <a href="https://www.linkedin.com/in/elielsilvas/"><img src="./assets/images/linkedin-icon.png" alt="linkedIn"></a>
+            <a href="https://github.com/Recr"><img src="./assets/images/github-icon.png" alt="GitHub"></a>
         </div>
     </footer>
+    
 </body>
 </html>
